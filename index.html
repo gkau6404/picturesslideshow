@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <title>Demo Donation Progress Indicator Featured</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet/css" type="text/css" href="test.scss">
+</head>
+
+<body>
+  <main role="main">
+    <!-- progress bar -->
+    <div class="donation--container">
+      <h1 id="donation--user" class="donation--user">Your Progress User</h1>
+      <span class="donation--title">Reached:</span>
+      <span id="donation--goal" class="donation--goal"></span>
+      <div class="donation--bar">
+        <div class="donation--rounded">
+          <div id="donation--progress" class="donation--progress" style="width: 0;"></div>
+        </div>
+        <div id="donation--number" class="donation--number" style="left: 0;"></div>
+        <span id="donation--status" class="donation--status"></span>
+      </div>
+      <form class="form--container">
+        <input id="donation--amount" class="input" type="number" min="1" placeholder="$ enter amount">
+        <input id="donate" class="button" type="submit" value="Donate">
+      </form>
+    </div>
+  </main>
+  
+      <script type="text/javascript" src="Javascript.js"></script>
+</body>
+    
+</html>
