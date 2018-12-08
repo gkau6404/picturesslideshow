@@ -1,33 +1,131 @@
 <html>
-
-<head>
-  <title>Demo Donation Progress Indicator Featured</title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
-  <link rel="stylesheet/css" type="text/css" href="test.scss">
-</head>
-
-<body>
-  <main role="main">
-    <!-- progress bar -->
-    <div class="donation--container">
-      <h1 id="donation--user" class="donation--user">Your Progress User</h1>
-      <span class="donation--title">Reached:</span>
-      <span id="donation--goal" class="donation--goal"></span>
-      <div class="donation--bar">
-        <div class="donation--rounded">
-          <div id="donation--progress" class="donation--progress" style="width: 0;"></div>
-        </div>
-        <div id="donation--number" class="donation--number" style="left: 0;"></div>
-        <span id="donation--status" class="donation--status"></span>
-      </div>
-      <form class="form--container">
-        <input id="donation--amount" class="input" type="number" min="1" placeholder="$ enter amount">
-        <input id="donate" class="button" type="submit" value="Donate">
-      </form>
-    </div>
-  </main>
-  
-      <script type="text/javascript" src="Javascript.js"></script>
+    <head>
+      <link rel="stylesheet" href="style.css" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Baloo|Ubuntu" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-2.2.0.min.js" integrity="sha256-ihAoc6M/JPfrIiIeayPE9xjin4UWjsx2mjW/rtmxLM4=" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.js" integrity="sha256-6HSLgn6Ao3PKc5ci8rwZfb//5QUu3ge2/Sw9KfLuvr8=" crossorigin="anonymous"></script>
+    </head>
+  <body>
+        <div class="table-cont">
+      		<div class="header">
+      			<button class="prev"></button>
+      			<span class="gd"></span>
+      			<button class="next"></button>
+      		</div>
+      		<table class="table">
+      			<thead>
+      				<tr>
+      					<td>SUN</td>
+      					<td>MON</td>
+      					<td>TUE</td>
+      					<td>WED</td>
+      					<td>THU</td>
+      					<td>FRI</td>
+      					<td>SAT</td>
+      				</tr>
+      			</thead>
+      			<tbody>
+      				<tr class="row-1">
+      					<td class="b-0">&nbsp;</td>
+      					<td class="b-1">&nbsp;</td>
+      					<td class="b-2">&nbsp;</td>
+      					<td class="b-3">&nbsp;</td>
+      					<td class="b-4">&nbsp;</td>
+      					<td class="b-5">&nbsp;</td>
+      					<td class="b-6">&nbsp;</td>
+      					<td class="b-7">&nbsp;</td>
+      					<td class="b-8">&nbsp;</td>
+      					<td class="b-9">&nbsp;</td>
+      					<td class="b-10">&nbsp;</td>
+      					<td class="b-11">&nbsp;</td>
+      					<td class="b-12">&nbsp;</td>
+      					<td class="b-13">&nbsp;</td>
+      					<td class="b-14">&nbsp;</td>
+      					<td class="b-15">&nbsp;</td>
+      					<td class="b-16">&nbsp;</td>
+      					<td class="b-17">&nbsp;</td>
+      					<td class="b-18">&nbsp;</td>
+      					<td class="b-19">&nbsp;</td>
+      					<td class="b-20">&nbsp;</td>
+      					<td class="b-21">&nbsp;</td>
+      					<td class="b-22">&nbsp;</td>
+      					<td class="b-23">&nbsp;</td>
+      					<td class="b-24">&nbsp;</td>
+      					<td class="b-25">&nbsp;</td>
+      					<td class="b-26">&nbsp;</td>
+      					<td class="b-27">&nbsp;</td>
+      					<td class="b-28">&nbsp;</td>
+      					<td class="b-29">&nbsp;</td>
+      					<td class="b-30">&nbsp;</td>
+      					<td class="b-31">&nbsp;</td>
+      					<td class="b-32">&nbsp;</td>
+      					<td class="b-33">&nbsp;</td>
+      					<td class="b-34">&nbsp;</td>
+      					<td class="b-35">&nbsp;</td>
+      					<td class="b-36">&nbsp;</td>
+      					<td class="b-37">&nbsp;</td>
+      					<td class="b-38">&nbsp;</td>
+      					<td class="b-39">&nbsp;</td>
+      					<td class="b-40">&nbsp;</td>
+      					<td class="b-41">&nbsp;</td>
+      				</tr>			
+      			</tbody>
+      		</table>
+      	</div>
+      	<div class="go-to">
+      		<input class="sel-year" placeholder="yyyy"></input>
+      		<select class="sel-month">
+      			<option value="0">Jan</option>
+      			<option value="1">Feb</option>
+      			<option value="2">Mar</option>
+      			<option value="3">Apr</option>
+      			<option value="4">May</option>
+      			<option value="5">Jun</option>
+      			<option value="6">Jul</option>
+      			<option value="7">Aug</option>
+      			<option value="8">Sep</option>
+      			<option value="9">Oct</option>
+      			<option value="10">Nov</option>
+      			<option value="11">Dec</option>
+      		</select>
+      		<select class="sel-date">
+      		</select>
+      		<button class="go">GO</button>
+      		<p class="close">X</p>
+      	</div>
+      	<p class="d1"></p>
+      	<p class="d2"></p>
+      	<p class="d3"></p>
+      	<p class="d4"></p>
+	<script type="text/javascript" src="Javascript.js"></script>
 </body>
-    
+          <div class="site-link">
+          		<a href="http://creatorvisions.com" target="_blank">
+          			Creator <img src="http://creatorvisions.com/img/new-logo-2.png"> 
+          		Visions</a>
+          	</div>
+        <style type="text/css">
+          		.site-link{
+                padding: 5px 15px;
+          			position: fixed;
+          			z-index: 99999;
+          			background: #303030;
+          			box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+          			right: 30px;
+          			bottom: 30px;
+          			border-radius: 10px;
+          		}
+              .site-link a{
+                text-decoration: none;
+                color: #0af !important;
+                    transform: translateY(-8px);
+              display: inline-block;
+              }
+          		.site-link img{
+                
+                    transform: translateY(10px);
+          			width: 30px;
+          			height: 30px;
+          		}
+        </style>
 </html>
